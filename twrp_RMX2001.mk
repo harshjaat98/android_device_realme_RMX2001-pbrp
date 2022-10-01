@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from our PitchBlack configuration
-$(call inherit-product, vendor/pb/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
 
@@ -32,10 +32,10 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock.recovery
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := RM6785
-PRODUCT_NAME := omni_RM6785
+PRODUCT_DEVICE := RMX2001
+PRODUCT_NAME := twrp_RMX2001
 PRODUCT_BRAND := realme
-PRODUCT_MODEL := RM6785
+PRODUCT_MODEL := RMX2001
 PRODUCT_MANUFACTURER := realme
 PRODUCT_SHIPPING_API_LEVEL := 29
 
