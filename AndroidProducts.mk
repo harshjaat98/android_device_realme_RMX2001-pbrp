@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 Potato Open Sauce Project
+# Copyright (C) 2019 Potato Open Sauce Projec
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,6 +15,6 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_RMX2001.mk
+    $(LOCAL_DIR)/twrp_RMX2001.mk
 
-COMMON_LUNCH_CHOICES := omni_RMX2001-eng
+COMMON_LUNCH_CHOICES := twrp_RMX2001-eng
