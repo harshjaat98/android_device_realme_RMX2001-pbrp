@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       MANIFEST_URL:
-        description: 'MANIFEST_URL (if using SSH keys, use git@github.com:repo URL format)'
+        description: 'MANIFEST_URL (if using SSH keys,use git@github.com:repo URL format)'
         required: true
         default: 'https://github.com/SHRP/manifest.git'
       MANIFEST_BRANCH:
