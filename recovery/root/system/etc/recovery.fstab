@@ -26,14 +26,6 @@ system_ext                                       /system_ext           erofs   r
 /dev/block/platform/bootdevice/by-name/vbmeta_system   /vbmeta_system  emmc    defaults                                            first_stage_mount,nofail,avb=vbmeta
 /dev/block/platform/bootdevice/by-name/persist   /mnt/vendor/persist   ext4    noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc   wait,check,formattable
 
-# Non-Volatile (RAM | DATA | CFG)
-/dev/block/platform/bootdevice/by-name/nvdata    /mnt/vendor/nvdata    ext4    noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc   wait,check,formattable
-/dev/block/platform/bootdevice/by-name/nvcfg     /mnt/vendor/nvcfg     ext4    noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc   wait,check,formattable
-
-# Subscriber Identification Module (SIM)
-/dev/block/platform/bootdevice/by-name/protect1  /mnt/vendor/protect_f ext4    noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc   wait,check,formattable
-/dev/block/platform/bootdevice/by-name/protect2  /mnt/vendor/protect_s ext4    noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc   wait,check,formattable
-
 # Misc
 /dev/block/platform/bootdevice/by-name/misc      /misc                 emmc    defaults                                            defaults
 /dev/block/platform/bootdevice/by-name/logo      /logo                 emmc    defaults                                            defaults
